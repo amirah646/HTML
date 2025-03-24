@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+.container{
+    margin: 10px;
+    padding: 20px;
+    border: 20px solid black;
+    box-sizing: border-box;
+}
+.certificate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.image{
+    display: flex;
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    flex-wrap: wrap;
+}
+
+p{
+  text-align:center;
+  margin-right: 10px;
+  flex-wrap: wrap;
+}
+
+.top{
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+}
+.mid{
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.APJ,.QR-Code{
+    width:150px;
+    height: 150px;
+    object-fit: contain;
+    
+}
+.name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.name table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  width:1000px
+}
+.name th,td{
+    border: 1px solid black;
+    border-collapse: collapse; 
+    padding: 10px;
+    text-align: center;
+}
+
+.middle{
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+.final{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.final table{
+  align-items: center;
+  width:1000px;
+  border-collapse: collapse;
+}
+.final td,th{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+th {
+    background-color: #ddd;
+}
+.final PRE{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.end{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.xxx{
+    text-align: center;
+}
+@media (max-width: 992pxpx) {
+    .container{
+        border-width:15px ;
+        padding: 15px;
+    }
+    .top{
+        margin: 20px 0;
+    }
+}
+@media (max-width: 768px) {
+  .container {
+    border-width: 10px;
+    padding: 10px;
+  }
+
+  .APJ,
+  .QR-Code {
+    width: 120px;
+    height: 120px;
+  }
+
+  .top {
+    justify-content: center;
+  }
+
+  .end {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    border-width: 5px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .APJ,
+  .QR-Code {
+    width: 100px;
+    height: 100px;
+  }
+
+  .name th,
+  .name td,
+  .final th,
+  .final td {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .mid p {
+    font-size: 14px;
+  }
+
+  .middle p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .APJ,
+  .QR-Code {
+    width: 80px;
+    height: 80px;
+  }
+
+  .name th,
+  .name td,
+  .final th,
+  .final td {
+    padding: 3px;
+    font-size: 12px;
+  }
+
+  .mid p {
+    font-size: 12px;
+  }
+
+  .middle p {
+    font-size: 12px;
+  }
+
+  .end {
+    font-size: 12px;
+  }
+}
